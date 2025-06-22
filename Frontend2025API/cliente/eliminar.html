@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>Eliminar Cliente</title>
+    <script src="../js/cliente.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Eliminar Cliente</h1>
+        <div class="alert alert-danger" role="alert">
+            Ingrese el RUT del cliente que desea eliminar.
+        </div>
+        <form>
+            <!-- Campo RUT -->
+            <div class="mb-3">
+                <label for="txt_id_cliente" class="form-label">RUT</label>
+                <input type="number" class="form-control" id="txt_id_cliente" aria-describedby="txt_id_cliente_Help">
+                <div id="txt_id_cliente_Help" class="form-text">Ingrese el RUT del cliente sin dígito verificador.</div>
+            </div>
+            <!-- Botón para eliminar cliente -->
+            <input type="button" class="btn btn-danger" value="Eliminar Cliente" onclick="validarEliminarCliente() && eliminarCliente()">
+        </form>
+    </div>
+</body>
+</html>
